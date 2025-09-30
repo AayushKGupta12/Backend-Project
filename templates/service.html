@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - IT Jobs Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow-sm border-b border-emerald-400">
+  <div class="max-w-6xl mx-auto px-6 py-4">
+    <nav class="flex items-center justify-between">
+      <!-- Logo -->
+      <div class="text-2xl font-bold text-emerald-600">EdStack</div>
+
+      <!-- Desktop Menu -->
+      <div class="hidden sm:flex space-x-8">
+        <a href="http://localhost:5173/" class="text-gray-600 hover:text-emerald-600 transition-colors"></a>
+        <a href="http://127.0.0.1:5000/about" class="text-gray-600 hover:text-emerald-600 transition-colors">About</a>
+        <a href="http://127.0.0.1:5000/service" class="text-emerald-600 font-medium">Services</a>
+        <a href="http://127.0.0.1:5000/contact" class="text-gray-600 hover:text-emerald-600 transition-colors">Contact</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="sm:hidden text-emerald-600 focus:outline-none">
+        ☰
+      </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden sm:hidden mt-4 space-y-4">
+      <a href="http://localhost:5173/" class="block text-gray-600 hover:text-emerald-600">Home</a>
+      <a href="http://127.0.0.1:5000/about" class="block text-gray-600 hover:text-emerald-600">About</a>
+      <a href="http://127.0.0.1:5000/service" class="block text-emerald-600 font-medium">Services</a>
+      <a href="http://127.0.0.1:5000/contact" class="block text-gray-600 hover:text-emerald-600">Contact</a>
+    </div>
+  </div>
+</header>
+
+<!-- JS for toggling mobile menu -->
+<script>
+  document.getElementById('menu-btn').addEventListener('click', function () {
+    document.getElementById('mobile-menu').classList.toggle('hidden');
+  });
+</script>
+
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-6 py-16">
+        <!-- Page Title -->
+        <div class="text-center mb-16">
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">Our Services</h1>
+            <div class="w-24 h-1 bg-emerald-500 mx-auto rounded-full"></div>
+            <p class="text-gray-600 mt-6 max-w-2xl mx-auto">
+                Comprehensive IT career solutions designed to accelerate your professional journey in India's dynamic technology landscape.
+            </p>
+        </div>
+
+        <!-- Current Services -->
+        <section class="mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-semibold text-gray-900 mb-4">Current Services</h2>
+                <p class="text-gray-600">Available now to enhance your IT career prospects</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- Service 1: Job Listings -->
+                <div class="bg-white rounded-lg shadow-sm border border-emerald-400 p-8 hover:shadow-md transition-shadow">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-emerald-400 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6a2 2 0 01-2 2H8a2 2 0 01-2-2V8a2 2 0 012-2V6"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900">Comprehensive Job Listings</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Access frequent job postings from leading IT sector companies across India. Our platform aggregates opportunities from startups to Fortune 500 companies.
+                    </p>
+                    <div class="flex items-center text-sm text-emerald-600">
+                        <span class="w-2 h-2 bg-emerald-500 rounded-full mr-2"></span>
+                        Pan-India coverage with real-time updates
+                    </div>
+                </div>
+
+                <!-- Service 2: Location Coverage -->
+                <div class="bg-white rounded-lg shadow-sm border border-emerald-400 p-8 hover:shadow-md transition-shadow">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-emerald-400 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900">All India Coverage</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Comprehensive job opportunities spanning across all major Indian cities and emerging tech hubs, from Bangalore to Pune, Delhi to Chennai.
+                    </p>
+                    <div class="flex items-center text-sm text-emerald-600">
+                        <span class="w-2 h-2 bg-emerald-500 rounded-full mr-2"></span>
+                        50+ cities and growing coverage network
+                    </div>
+                </div>
+
+                <!-- Service 3: Salary Insights -->
+                <div class="bg-white rounded-lg shadow-sm border border-emerald-400 p-8 hover:shadow-md transition-shadow">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-emerald-400 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900">Salary Range Intelligence</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Transparent salary information with stipend ranges from ₹25,000 to ₹2,50,000, helping you make informed career decisions.
+                    </p>
+                    <div class="flex items-center text-sm text-emerald-600">
+                        <span class="w-2 h-2 bg-emerald-500 rounded-full mr-2"></span>
+                        Market-competitive salary benchmarks
+                    </div>
+                </div>
+
+                <!-- Service 4: ATS Scoring -->
+                <div class="bg-white rounded-lg shadow-sm border border-emerald-400 p-8 hover:shadow-md transition-shadow">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-emerald-400 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900">ATS Score Analysis</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Advanced resume scoring system aligned with job descriptions to maximize your application success rate through ATS filters.
+                    </p>
+                    <div class="flex items-center text-sm text-emerald-600">
+                        <span class="w-2 h-2 bg-emerald-500 rounded-full mr-2"></span>
+                        AI-powered compatibility scoring
+                    </div>
+                </div>
+
+                <!-- Service 5: Resume Suggestions -->
+                <div class="bg-white rounded-lg shadow-sm border border-emerald-400 p-8 hover:shadow-md transition-shadow">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-emerald-400 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900">Smart Resume Optimization</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Personalized resume suggestions tailored to specific job types and company requirements, enhancing your profile visibility.
+                    </p>
+                    <div class="flex items-center text-sm text-emerald-600">
+                        <span class="w-2 h-2 bg-emerald-500 rounded-full mr-2"></span>
+                        Role-specific optimization recommendations
+                    </div>
+                </div>
+
+                <!-- Service 6: News Updates -->
+                <div class="bg-white rounded-lg shadow-sm border border-emerald-400 p-8 hover:shadow-md transition-shadow">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-emerald-400 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900">Latest Industry News</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Stay informed with curated recent news from India's tech industry, updated within the last 48 hours to keep you ahead of trends.
+                    </p>
+                    <div class="flex items-center text-sm text-emerald-600">
+                        <span class="w-2 h-2 bg-emerald-500 rounded-full mr-2"></span>
+                        Real-time industry intelligence
+                    </div>
+                </div>
+
+                <!-- Service 7: Expert Blogs -->
+                <div class="bg-white rounded-lg shadow-sm border border-emerald-400 p-8 hover:shadow-md transition-shadow">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-emerald-400 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900">Specialized Content</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Expert-written blogs focusing on India's tech landscape, covering developments and insights from the past 48 hours.
+                    </p>
+                    <div class="flex items-center text-sm text-emerald-600">
+                        <span class="w-2 h-2 bg-emerald-500 rounded-full mr-2"></span>
+                        India-focused tech insights and analysis
+                    </div>
+                </div>
+
+                <!-- Service 8: Career Roadmap -->
+                <div class="bg-white rounded-lg shadow-sm border border-emerald-400 p-8 hover:shadow-md transition-shadow">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-emerald-400 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900">FAANG Career Roadmap</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Structured roadmaps for landing positions at top-tier companies including Facebook, Amazon, Apple, Netflix, Google, and other leading tech giants.
+                    </p>
+                    <div class="flex items-center text-sm text-emerald-600">
+                        <span class="w-2 h-2 bg-emerald-500 rounded-full mr-2"></span>
+                        Step-by-step career progression guidance
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upcoming Features -->
+        <section class="bg-emerald-400 rounded-lg p-12 mb-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-semibold text-gray-900 mb-4">Upcoming Features</h2>
+                <p class="text-gray-600">Enhanced services launching soon to further accelerate your career</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Upcoming Feature 1 -->
+                <div class="bg-white rounded-lg p-6 text-center hover:shadow-md transition-shadow">
+                    <div class="w-16 h-16 bg-emerald-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-gray-900 mb-2">Company Referrals</h3>
+                    <p class="text-gray-600 text-sm">Direct referral connections to boost application success</p>
+                </div>
+
+                <!-- Upcoming Feature 2 -->
+                <div class="bg-white rounded-lg p-6 text-center hover:shadow-md transition-shadow">
+                    <div class="w-16 h-16 bg-emerald-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-gray-900 mb-2">HR Contact Details</h3>
+                    <p class="text-gray-600 text-sm">Direct access to HR representatives and their contact information</p>
+                </div>
+
+                <!-- Upcoming Feature 3 -->
+                <div class="bg-white rounded-lg p-6 text-center hover:shadow-md transition-shadow">
+                    <div class="w-16 h-16 bg-emerald-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-gray-900 mb-2">Live Interview Prep</h3>
+                    <p class="text-gray-600 text-sm">Real-time interview preparation and coaching sessions</p>
+                </div>
+
+                <!-- Upcoming Feature 4 -->
+                <div class="bg-white rounded-lg p-6 text-center hover:shadow-md transition-shadow">
+                    <div class="w-16 h-16 bg-emerald-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-gray-900 mb-2">Virtual Interviews</h3>
+                    <p class="text-gray-600 text-sm">Scheduled virtual interview sessions with industry experts</p>
+                </div>
+            </div>
+        </section>
+
+        
+        
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-400 mt-14">
+        <div class="max-w-6xl mx-auto px-6 py-12">
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                <div class="text-2xl font-bold text-emerald-400">EdStack</div>
+                <div class="flex space-x-6 text-sm">
+                    <a href="http://127.0.0.1:5000/about" class="text-emerald-400 font-medium">About</a>
+                    <a href="http://127.0.0.1:5000/service" class="text-gray-400 hover:text-emerald-400 transition-colors">Services</a>
+                    <a href="http://127.0.0.1:5000/contact" class="text-gray-400 hover:text-emerald-400 transition-colors">Contact</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
+                <p>&copy; 2025 TechCareers. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

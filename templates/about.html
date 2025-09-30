@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow-sm border-b border-emerald-100">
+  <div class="max-w-4xl mx-auto px-6 py-4">
+    <nav class="flex items-center justify-between relative">
+      <!-- Logo -->
+      <div class="text-2xl font-bold text-emerald-600">EdStack</div>
+
+      <!-- Hamburger Button for mobile -->
+      <button id="menu-btn" class="sm:hidden focus:outline-none z-20" aria-label="Toggle menu">
+        <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+
+      <!-- Navigation links -->
+      <div id="menu" class="hidden sm:flex space-x-8 absolute sm:static top-full sm:top-auto left-0 w-full sm:w-auto bg-white sm:bg-transparent shadow-md sm:shadow-none p-6 sm:p-0 rounded-b-lg sm:rounded-none">
+        <a href="http://localhost:5173/" class="text-gray-600 hover:text-emerald-600 transition-colors block sm:inline-block">Home</a>
+        <a href="http://127.0.0.1:5000/about" class="text-emerald-600 font-medium block sm:inline-block">About</a>
+        <a href="http://127.0.0.1:5000/service" class="text-gray-600 hover:text-emerald-600 transition-colors block sm:inline-block">Services</a>
+        <a href="http://127.0.0.1:5000/contact" class="text-gray-600 hover:text-emerald-600 transition-colors block sm:inline-block">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
+
+  menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-6 py-16">
+        <!-- Page Title -->
+        <div class="text-center mb-16">
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">About Us</h1>
+            <div class="w-24 h-1 bg-emerald-300 mx-auto rounded-full"></div>
+        </div>
+
+        <!-- Content Sections -->
+        <div class="space-y-16">
+            <!-- Who We Are -->
+            <section class="max-w-3xl mx-auto">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-6">Who We Are</h2>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    We are an organization on the stage of taking job searching to the next level. Looking at the youth’s concentration and skills mismatch, we have decided to launch this application, which serves users to find the best fit of their skill sets to the company. This is a simple, one-step process to find the right countries at the right time. Our team combines Artificial Intelligence to parse resumes and provide suggestions. We have well-designed and structured roadmaps for each trending entry-level IT job which can boost your skills. Our cutting-edge news application keeps users completely aware of the ongoing market trends in 7 different domains: technology, science, Indian stock market, IT market, health, sports, and fitness.
+                </p>
+            </section>
+
+            <!-- Our Mission -->
+            <section class="bg-emerald-50 rounded-lg p-8 max-w-3xl mx-auto">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-6">Our Mission</h2>
+                <p class="text-gray-700 leading-relaxed text-lg">
+                    To step up the next-level job searching features in India and to help find the best-fit company at one click.
+                </p>
+            </section>
+
+            <!-- Our Values -->
+            <section class="max-w-3xl mx-auto">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-8">Our Values</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-2 h-2 bg-emerald-300 rounded-full mt-2 flex-shrink-0"></div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900 mb-1">Excellence</h3>
+                                <p class="text-gray-600 text-sm">To maintain high-end, seamless user experience.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-2 h-2 bg-emerald-300 rounded-full mt-2 flex-shrink-0"></div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900 mb-1">Innovation</h3>
+                                <p class="text-gray-600 text-sm">We embrace new ideas and creative approaches.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-2 h-2 bg-emerald-300 rounded-full mt-2 flex-shrink-0"></div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900 mb-1">Integrity</h3>
+                                <p class="text-gray-600 text-sm">We operate with transparency and ethical principles.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-2 h-2 bg-emerald-300 rounded-full mt-2 flex-shrink-0"></div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900 mb-1">Partnership</h3>
+                                <p class="text-gray-600 text-sm">We build everlasting relationships with our teams and client experts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Our Approach -->
+            <section class="max-w-3xl mx-auto">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-6">Our Approach</h2>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    We believe in a collaborative methodology that places our clients at the center of every decision. Our process is built on thorough understanding, strategic planning, and meticulous execution.
+                </p>
+                <p class="text-gray-700 leading-relaxed">
+                    By combining proven frameworks with innovative thinking, we deliver solutions that are both practical and transformative, ensuring long-term success for our partners.
+                </p>
+            </section>
+
+            <!-- Contact CTA -->
+            <section class="text-center bg-white rounded-lg shadow-sm border border-emerald-100 p-8 max-w-3xl mx-auto">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-4">Ready to Work Together?</h2>
+                <p class="text-gray-600 mb-6">
+                    We're here to discuss how we can help you achieve your objectives.
+                </p>
+                <a href="http://localhost:5173/" class="inline-flex items-center px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-medium rounded-lg transition-colors">
+                    Get In Touch
+                    <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg>
+                </a>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 mt-24">
+        <div class="max-w-4xl mx-auto px-6 py-12">
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                <div class="text-2xl font-bold text-emerald-400">EdStack</div>
+                <div class="flex space-x-6 text-sm">
+                    <a href="#" class="hover:text-emerald-400 transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-emerald-400 transition-colors">Terms of Service</a>
+                    <a href="#" class="hover:text-emerald-400 transition-colors">Contact</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
+                <p>&copy; 2025 Company. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-slate-50 to-slate-100 min-h-screen flex items-center justify-center p-4">
+    
+    <div class="w-full max-w-2xl">
+        <!-- Header -->
+        <div class="text-center mb-8">
+            <h1 class="text-3xl md:text-4xl font-bold text-slate-700 mb-2">Get In Touch</h1>
+            <p class="text-slate-500 text-sm md:text-base">We'd love to hear from you. Fill out the form below.</p>
+        </div>
+
+        <!-- Contact Form Card -->
+        <div class="bg-white rounded-lg shadow-lg p-6 md:p-8 border border-slate-200">
+            <form id="contactForm" class="space-y-6">
+                
+                <!-- Name Field -->
+                <div>
+                    <label for="name" class="block text-sm font-medium text-slate-700 mb-2">
+                        Your Name <span class="text-red-500">*</span>
+                    </label>
+                    <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        required
+                        class="w-full px-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-slate-500 focus:border-slate-500 outline-none transition-all duration-200 text-slate-700"
+                        placeholder="John Doe"
+                    >
+                </div>
+
+                <!-- Email Field -->
+                <div>
+                    <label for="email" class="block text-sm font-medium text-slate-700 mb-2">
+                        Your Email <span class="text-red-500">*</span>
+                    </label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        required
+                        class="w-full px-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-slate-500 focus:border-slate-500 outline-none transition-all duration-200 text-slate-700"
+                        placeholder="john.doe@example.com"
+                    >
+                </div>
+
+                <!-- Designation Field -->
+                <div>
+                    <label for="designation" class="block text-sm font-medium text-slate-700 mb-2">
+                        Your Designation
+                    </label>
+                    <input 
+                        type="text" 
+                        id="designation" 
+                        name="designation"
+                        class="w-full px-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-slate-500 focus:border-slate-500 outline-none transition-all duration-200 text-slate-700"
+                        placeholder="Software Engineer"
+                    >
+                </div>
+
+                <!-- Subject Field -->
+                <div>
+                    <label for="subject" class="block text-sm font-medium text-slate-700 mb-2">
+                        Subject <span class="text-red-500">*</span>
+                    </label>
+                    <input 
+                        type="text" 
+                        id="subject" 
+                        name="subject" 
+                        required
+                        class="w-full px-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-slate-500 focus:border-slate-500 outline-none transition-all duration-200 text-slate-700"
+                        placeholder="Inquiry about..."
+                    >
+                </div>
+
+                <!-- Message Field -->
+                <div>
+                    <label for="message" class="block text-sm font-medium text-slate-700 mb-2">
+                        Your Message <span class="text-red-500">*</span>
+                    </label>
+                    <textarea 
+                        id="message" 
+                        name="message" 
+                        rows="6" 
+                        required
+                        class="w-full px-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-slate-500 focus:border-slate-500 outline-none transition-all duration-200 resize-none text-slate-700"
+                        placeholder="Write your message here..."
+                    ></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <div>
+                    <button 
+                        type="submit"
+                        class="w-full bg-slate-600 hover:bg-slate-700 text-white font-medium py-3 px-6 rounded-md transition-all duration-200 shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-offset-2"
+                    >
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Footer Note -->
+        <p class="text-center text-xs text-slate-400 mt-6">
+            We typically respond within 24-48 hours
+        </p>
+    </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const designation = document.getElementById('designation').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            const mailtoLink = `mailto:aayush120305@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+                `Name: ${name}\n` +
+                `Email: ${email}\n` +
+                `Designation: ${designation}\n\n` +
+                `Message:\n${message}`
+            )}`;
+            
+            window.location.href = mailtoLink;
+        });
+    </script>
+
+</body>
+</html>
