@@ -41,14 +41,6 @@ def company_news():
 
 
     data = {
-  "Foundation AI": {
-    "Role": "Associate Technical Support Engineer",
-    "Stipend": "₹3L - ₹5L LPA",
-    "Loc": "Hyderabad, Telangana, India",
-    "Link": "https://www.foundation.ai/careers",
-    "Batch": "2023 to 2025",
-    "Logo": "https://img.logo.dev/foundation.ai?token=pk_djKZ3gIOQqyja8btgxBpBA"
-  },
   "Stripe": {
     "Role": "Software Engineering New Grad",
     "Stipend": "₹12L - ₹15L LPA",
@@ -56,14 +48,6 @@ def company_news():
     "Link": "https://stripe.com/careers",
     "Batch": "2026",
     "Logo": "https://img.logo.dev/stripe.com?token=pk_djKZ3gIOQqyja8btgxBpBA"
-  },
-  "Odoo": {
-    "Role": "Software Developer Intern",
-    "Stipend": "₹20K/month",
-    "Loc": "Gandhinagar",
-    "Link": "https://www.odoo.com/page/careers",
-    "Batch": "2025 to 2026",
-    "Logo": "https://img.logo.dev/odoo.com?token=pk_djKZ3gIOQqyja8btgxBpBA"
   },
   "Stripe Intern": {
     "Role": "Software Engineer Intern",
