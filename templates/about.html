@@ -24,10 +24,10 @@
 
       <!-- Navigation links -->
       <div id="menu" class="hidden sm:flex space-x-8 absolute sm:static top-full sm:top-auto left-0 w-full sm:w-auto bg-white sm:bg-transparent shadow-md sm:shadow-none p-6 sm:p-0 rounded-b-lg sm:rounded-none">
-        <a href="http://localhost:5173/" class="text-gray-600 hover:text-emerald-600 transition-colors block sm:inline-block">Home</a>
-        <a href="http://127.0.0.1:5000/about" class="text-emerald-600 font-medium block sm:inline-block">About</a>
-        <a href="http://127.0.0.1:5000/service" class="text-gray-600 hover:text-emerald-600 transition-colors block sm:inline-block">Services</a>
-        <a href="http://127.0.0.1:5000/contact" class="text-gray-600 hover:text-emerald-600 transition-colors block sm:inline-block">Contact</a>
+        <a href="https://stackbit.vercel.app" class="text-gray-600 hover:text-emerald-600 transition-colors block sm:inline-block">Home</a>
+        <a href="https://edstack.onrender.com/about" class="text-emerald-600 font-medium block sm:inline-block">About</a>
+        <a href="https://edstack.onrender.com/service" class="text-gray-600 hover:text-emerald-600 transition-colors block sm:inline-block">Services</a>
+        <a href="https://edstack.onrender.com/contact" class="text-gray-600 hover:text-emerald-600 transition-colors block sm:inline-block">Contact</a>
       </div>
     </nav>
   </div>
@@ -118,38 +118,68 @@
                     By combining proven frameworks with innovative thinking, we deliver solutions that are both practical and transformative, ensuring long-term success for our partners.
                 </p>
             </section>
-
-            <!-- Contact CTA -->
-            <section class="text-center bg-white rounded-lg shadow-sm border border-emerald-100 p-8 max-w-3xl mx-auto">
-                <h2 class="text-2xl font-semibold text-gray-900 mb-4">Ready to Work Together?</h2>
-                <p class="text-gray-600 mb-6">
-                    We're here to discuss how we can help you achieve your objectives.
-                </p>
-                <a href="http://localhost:5173/" class="inline-flex items-center px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-medium rounded-lg transition-colors">
-                    Get In Touch
-                    <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                    </svg>
-                </a>
-            </section>
         </div>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-400 mt-24">
-        <div class="max-w-4xl mx-auto px-6 py-12">
-            <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-                <div class="text-2xl font-bold text-emerald-400">EdStack</div>
-                <div class="flex space-x-6 text-sm">
-                    <a href="#" class="hover:text-emerald-400 transition-colors">Privacy Policy</a>
-                    <a href="#" class="hover:text-emerald-400 transition-colors">Terms of Service</a>
-                    <a href="#" class="hover:text-emerald-400 transition-colors">Contact</a>
-                </div>
-            </div>
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
-                <p>&copy; 2025 Company. All rights reserved.</p>
-            </div>
+    <footer className="bg-emerald-50 border-t border-slate-500">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+          
+          {/* Company Info */}
+          <div className="space-y-4">
+            <h3 className="text-lg font-semibold text-slate-800">Company</h3>
+            <ul className="space-y-3">
+              <li>
+                <a href="https://edstack.onrender.com/about" className="text-slate-900 hover:text-emerald-900 font-medium transition-colors duration-200 text-sm">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="https://edstack.onrender.com/contact" className="text-slate-900 hover:text-emerald-900 font-medium transition-colors duration-200 text-sm">
+                  Contact Us
+                </a>
+              </li>
+              
+            </ul>
+          </div>
+
+          {/* Resources */}
+          <div className="space-y-4">
+            <h3 className="text-lg font-semibold text-slate-800">Resources</h3>
+            <ul className="space-y-3">
+              <li>
+                <a href="https://stackbit.vercel.app" className="text-slate-900 hover:text-emerald-900 font-medium transition-colors duration-200 text-sm">
+                  Jobs Portal
+                </a>
+              </li>
+            </ul>
+            <ul className="space-y-3">
+              <li>
+                <a href="https://edstack.onrender.com/service" className="text-slate-900 hover:text-emerald-900 font-medium transition-colors duration-200 text-sm">
+                  Services 
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Social & Newsletter */}
+          <div className="space-y-4">
+            <h3 className="text-lg font-semibold text-slate-800">Connect</h3>
+            <p className="text-sm text-slate-900">Stay updated with our latest news and updates</p>
+          </div>
         </div>
+
+        {/* Bottom Bar */}
+        <div className="mt-12 pt-8 border-t border-slate-500">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-sm text-slate-800">
+              ©2025 <span className="text-emerald-900 font-medium">EdStack</span>. All rights reserved.
+            </p>
+           
+          </div>
+        </div>
+      </div>
     </footer>
 </body>
 </html>
