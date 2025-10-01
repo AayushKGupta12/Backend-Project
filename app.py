@@ -240,7 +240,52 @@ def company_news():
     "Date_of_publish": "30 September 2025",
     "Batch": "2025, 2026",
     "Logo": "https://img.logo.dev/sharechat.com?token=pk_djKZ3gIOQqyja8btgxBpBA"
-  }
+  },
+"AVEVA": {
+"Role": "Software Developer Intern",
+"Stipend": "₹50,000/month",
+"Loc": "Hyderabad, India",
+"Link": "https://www.aveva.com/en/about/careers/early-careers/",
+"Date_of_publish": "28 Sep 2025",
+"Batch": "2027",
+"Logo": "https://img.logo.dev/aveva.com?token=pk_djKZ3gIOQqyja8btgxBpBA"
+},
+"Qualcomm": {
+"Role": "Associate Engineer",
+"Stipend": "₹13L - ₹15.7L LPA",
+"Loc": "Chennai, India",
+"Link": "https://www.qualcomm.com/company/careers",
+"Date_of_publish": "29 Sep 2025",
+"Batch": "2023, 2024, 2025",
+"Logo": "https://img.logo.dev/qualcomm.com?token=pk_djKZ3gIOQqyja8btgxBpBA"
+},
+"Groww": {
+"Role": "Data Security Engineer Intern",
+"Stipend": "₹25K - ₹58K/month",
+"Loc": "Bengaluru, India",
+"Link": "https://groww.in/careers",
+"Date_of_publish": "29 Sep 2025",
+"Batch": "2023, 2024, 2025",
+"Logo": "https://img.logo.dev/groww.in?token=pk_djKZ3gIOQqyja8btgxBpBA"
+},
+"Teradata": {
+"Role": "Software Engineer",
+"Stipend": "₹6L - ₹10L LPA",
+"Loc": "Hyderabad, India",
+"Link": "https://careers.teradata.com/jobs/219278/software-engineer",
+"Date_of_publish": "30 Sep 2025",
+"Batch": "2022, 2023, 2024, 2025",
+"Logo": "https://img.logo.dev/teradata.com?token=pk_djKZ3gIOQqyja8btgxBpBA"
+},
+"Newfold Digital": {
+"Role": "AI Engineer Intern",
+"Stipend": "₹25,000–42,000/month",
+"Loc": "Mumbai, India",
+"Link": "https://www.newfold.com/careers",
+"Date_of_publish": "30 Sep 2025",
+"Batch": "2023, 2024, 2025",
+"Logo": "https://img.logo.dev/newfold.com?token=pk_djKZ3gIOQqyja8btgxBpBA"
+}
 }
 
     return jsonify(data)
