@@ -89,13 +89,13 @@ def company_news():
     "Batch": "2025/26 passouts",
     "Logo": "https://img.logo.dev/ltimindtree.com"
   },
-  "Foundation AI": {
-    "Role": "Associate Technical Support Engineer",
-    "Stipend": "₹3L - ₹5L LPA",
-    "Loc": "Hyderabad, Telangana, India",
-    "Link": "https://www.foundation.ai/careers",
-    "Batch": "2023 to 2025",
-    "Logo": "https://img.logo.dev/foundation.ai?token=pk_djKZ3gIOQqyja8btgxBpBA"
+  "Larsen & Toubro": {
+    "Role": "Graduate Engineer Trainee",
+    "Stipend": "₹4L - ₹8L LPA",
+    "Loc": "India",
+    "Link": "https://www.larsentoubro.com/corporate/careers/campus-recruitment/",
+    "Batch": "2025/26 passouts",
+    "Logo": "https://img.logo.dev/larsentoubro.com"
   },
   "Stripe": {
     "Role": "Software Engineering New Grad",
@@ -114,6 +114,7 @@ def company_news():
     "Logo": "https://img.logo.dev/ey.com?token=pk_djKZ3gIOQqyja8btgxBpBA"
   }
 }
+
     return jsonify(data)
 
 
@@ -235,13 +236,13 @@ def company_news2():
     "Batch": "2026/27 passout",
     "Logo": "https://img.logo.dev/mindtickle.com?token=pk_djKZ3gIOQqyja8btgxBpBA"
   },
-  "Sense": {
-    "Role": "Software Engineering Internship",
-    "Stipend": "₹50,000/month",
-    "Loc": "India",
-    "Link": "https://sensehr.sensehq.com/careers/jobs/175",
-    "Batch": "2026/27 passouts",
-    "Logo": "https://img.logo.dev/sensehq.com?token=pk_djKZ3gIOQqyja8btgxBpBA"
+  "Kadel Labs": {
+    "Role": "MERN Stack Developer Intern",
+    "Stipend": "₹25K - ₹40K/month",
+    "Loc": "Udaipur",
+    "Link": "https://kadel.in/careers",
+    "Batch": "2024 to 2025",
+    "Logo": "https://img.logo.dev/kadel.in"
   },
   "Rippling": {
     "Role": "SDE (Frontend)",
@@ -278,13 +279,14 @@ def company_news2():
 }
 
 
+
     return jsonify(data)
 
 
 @app.route('/company-news3')
 def company_news3():
 
-    data ={
+    data = {
   "Youtube": {
     "Role": "Software Engineer",
     "Stipend": "₹90,000 - ₹1,10,000/month",
@@ -439,6 +441,7 @@ def company_news4():
     "Logo": "https://img.logo.dev/birlasoft.com?token=pk_djKZ3gIOQqyja8btgxBpBA"
   }
 }
+
 
     return jsonify(data)
 
