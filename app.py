@@ -47,7 +47,7 @@ def company_news():
     "Loc": "India",
     "Link": "https://www.tcs.com/careers",
     "Batch": "2025/26 passouts",
-    "Logo": "https://img.logo.dev/tcs.com"
+    "Logo": "https://img.logo.dev/tcs.com?token=pk_djKZ3gIOQqyja8btgxBpBA"
   },
   "Infosys": {
     "Role": "Systems Engineer / Power Programmer",
@@ -55,7 +55,7 @@ def company_news():
     "Loc": "India",
     "Link": "https://www.infosys.com/careers",
     "Batch": "2025/26 passouts",
-    "Logo": "https://img.logo.dev/infosys.com"
+    "Logo": "https://img.logo.dev/infosys.com?token=pk_djKZ3gIOQqyja8btgxBpBA"
   },
   "Wipro": {
     "Role": "Project Engineer",
@@ -63,7 +63,7 @@ def company_news():
     "Loc": "India",
     "Link": "https://careers.wipro.com",
     "Batch": "2025/26 passouts",
-    "Logo": "https://img.logo.dev/wipro.com"
+    "Logo": "https://img.logo.dev/wipro.com?token=pk_djKZ3gIOQqyja8btgxBpBA"
   },
   "HCLTech": {
     "Role": "Graduate Engineer Trainee",
@@ -71,7 +71,7 @@ def company_news():
     "Loc": "India",
     "Link": "https://www.hcltech.com/careers/campus-hiring",
     "Batch": "2025/26 passouts",
-    "Logo": "https://img.logo.dev/hcltech.com"
+    "Logo": "https://img.logo.dev/hcltech.com?token=pk_djKZ3gIOQqyja8btgxBpBA"
   },
   "Tech Mahindra": {
     "Role": "Associate Software Engineer",
@@ -79,7 +79,7 @@ def company_news():
     "Loc": "India",
     "Link": "https://campusconnect.techmahindra.com/home",
     "Batch": "2025/26 passouts",
-    "Logo": "https://img.logo.dev/techmahindra.com"
+    "Logo": "https://img.logo.dev/techmahindra.com?token=pk_djKZ3gIOQqyja8btgxBpBA"
   },
   "LTIMindtree": {
     "Role": "Software Engineer, Graduate Trainee",
@@ -87,7 +87,7 @@ def company_news():
     "Loc": "India",
     "Link": "https://www.ltimindtree.com/careers/",
     "Batch": "2025/26 passouts",
-    "Logo": "https://img.logo.dev/ltimindtree.com"
+    "Logo": "https://img.logo.dev/ltimindtree.com?token=pk_djKZ3gIOQqyja8btgxBpBA"
   },
   "Larsen & Toubro": {
     "Role": "Graduate Engineer Trainee",
@@ -95,7 +95,7 @@ def company_news():
     "Loc": "India",
     "Link": "https://www.larsentoubro.com/corporate/careers/campus-recruitment/",
     "Batch": "2025/26 passouts",
-    "Logo": "https://img.logo.dev/larsentoubro.com"
+    "Logo": "https://img.logo.dev/larsentoubro.com?token=pk_djKZ3gIOQqyja8btgxBpBA"
   },
   "Stripe": {
     "Role": "Software Engineering New Grad",
