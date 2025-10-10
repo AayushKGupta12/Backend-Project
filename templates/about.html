@@ -5,39 +5,122 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>EdStack | About Us</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .menu-icon line {
+      transition: all 0.3s ease;
+    }
+    #menu-btn.active .line1 {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+    #menu-btn.active .line2 {
+      opacity: 0;
+    }
+    #menu-btn.active .line3 {
+      transform: rotate(-45deg) translate(7px, -6px);
+    }
+  </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
-  <!-- Header -->
-  <header class="bg-white shadow-sm border-b border-emerald-100">
-    <div class="max-w-4xl mx-auto px-6 py-4">
-      <nav class="flex items-center justify-between relative">
-        <!-- Logo -->
-        <div class="text-2xl font-bold text-emerald-600">EdStack</div>
-
-        <!-- Hamburger Button for mobile -->
-        <button id="menu-btn" class="sm:hidden focus:outline-none z-20" aria-label="Toggle menu">
-          <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
-
-        <!-- Navigation links -->
-        <div id="menu" class="hidden sm:flex space-x-8 absolute sm:static top-full sm:top-auto left-0 w-full sm:w-auto bg-white sm:bg-transparent shadow-md sm:shadow-none p-6 sm:p-0 rounded-b-lg sm:rounded-none">
-          <a href="https://edstack.netlify.app" class="text-gray-600 hover:text-emerald-600 transition-colors block sm:inline-block">Home</a>
-          <a href="https://edstack.onrender.com/about" class="text-emerald-600 font-medium block sm:inline-block">About</a>
-          <a href="https://edstack.onrender.com/service" class="text-gray-600 hover:text-emerald-600 transition-colors block sm:inline-block">Services</a>
-          <a href="https://edstack.onrender.com/contact" class="text-gray-600 hover:text-emerald-600 transition-colors block sm:inline-block">Contact</a>
+  <!-- Header with Exact React Navigation Styling -->
+  <nav class="bg-white shadow-md border-b border-emerald-700">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo/Brand -->
+        <div class="flex-shrink-0">
+          <div class="text-2xl font-bold text-emerald-700">
+            EdStack
+          </div>
         </div>
-      </nav>
+
+        <!-- Desktop Nav -->
+        <div class="hidden md:flex items-center space-x-8">
+          <div class="flex items-baseline space-x-8">
+            <a href="https://edstack.netlify.app" 
+               class="relative text-emerald-700 hover:text-emerald-700 px-3 py-2 text-sm font-medium transition-colors duration-300 ease-in-out group">
+              Home
+              <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-700 transition-all duration-300 ease-in-out group-hover:w-full"></span>
+            </a>
+            <a href="https://edstack.onrender.com/about" 
+               class="relative text-emerald-700 hover:text-emerald-700 px-3 py-2 text-sm font-medium transition-colors duration-300 ease-in-out group">
+              About
+              <span class="absolute bottom-0 left-0 w-full h-0.5 bg-emerald-700"></span>
+            </a>
+            <a href="https://edstack.onrender.com/service" 
+               class="relative text-emerald-700 hover:text-emerald-700 px-3 py-2 text-sm font-medium transition-colors duration-300 ease-in-out group">
+              Services
+              <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-700 transition-all duration-300 ease-in-out group-hover:w-full"></span>
+            </a>
+            <a href="https://edstack.onrender.com/contact" 
+               class="relative text-emerald-700 hover:text-emerald-700 px-3 py-2 text-sm font-medium transition-colors duration-300 ease-in-out group">
+              Contact Us
+              <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-700 transition-all duration-300 ease-in-out group-hover:w-full"></span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Mobile menu button -->
+        <div class="md:hidden">
+          <button id="menu-btn"
+                  class="text-emerald-700 focus:outline-none hover:ring-2 hover:ring-emerald-700 focus:ring-offset-2 p-2 rounded-md transition-colors duration-100"
+                  aria-label="Toggle menu">
+            <svg class="h-6 w-6 menu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <line class="line1" x1="4" y1="6" x2="20" y2="6" stroke-width="2" stroke-linecap="round"/>
+              <line class="line2" x1="4" y1="12" x2="20" y2="12" stroke-width="2" stroke-linecap="round"/>
+              <line class="line3" x1="4" y1="18" x2="20" y2="18" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
     </div>
-  </header>
+
+    <!-- Mobile Nav Menu -->
+    <div id="mobile-menu"
+         class="md:hidden transition-all duration-300 ease-in-out overflow-hidden max-h-0 opacity-0">
+      <div class="px-2 pt-2 pb-3 space-y-1 border-t border-emerald-100">
+        <a href="https://edstack.netlify.app"
+           class="block px-3 py-2 text-emerald-700 hover:text-emerald-50 hover:bg-emerald-700 rounded-md text-base font-medium transition-colors duration-200">
+          Home
+        </a>
+        <a href="https://edstack.onrender.com/about"
+           class="block px-3 py-2 text-emerald-700 hover:text-emerald-50 hover:bg-emerald-700 rounded-md text-base font-medium transition-colors duration-200">
+          About
+        </a>
+        <a href="https://edstack.onrender.com/service"
+           class="block px-3 py-2 text-emerald-700 hover:text-emerald-50 hover:bg-emerald-700 rounded-md text-base font-medium transition-colors duration-200">
+          Services
+        </a>
+        <a href="https://edstack.onrender.com/contact"
+           class="block px-3 py-2 text-emerald-700 hover:text-emerald-50 hover:bg-emerald-700 rounded-md text-base font-medium transition-colors duration-200">
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </nav>
 
   <script>
     const menuBtn = document.getElementById('menu-btn');
-    const menu = document.getElementById('menu');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
     menuBtn.addEventListener('click', () => {
-      menu.classList.toggle('hidden');
+      menuBtn.classList.toggle('active');
+      
+      if (mobileMenu.classList.contains('max-h-0')) {
+        mobileMenu.classList.remove('max-h-0', 'opacity-0');
+        mobileMenu.classList.add('max-h-64', 'opacity-100');
+      } else {
+        mobileMenu.classList.remove('max-h-64', 'opacity-100');
+        mobileMenu.classList.add('max-h-0', 'opacity-0');
+      }
+    });
+
+    // Close menu when clicking on a link
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        menuBtn.classList.remove('active');
+        mobileMenu.classList.remove('max-h-64', 'opacity-100');
+        mobileMenu.classList.add('max-h-0', 'opacity-0');
+      });
     });
   </script>
 
@@ -45,7 +128,7 @@
   <main class="max-w-4xl mx-auto px-6 py-16">
     <div class="text-center mb-16">
       <h1 class="text-4xl font-bold text-gray-900 mb-4">About Us</h1>
-      <div class="w-24 h-1 bg-emerald-300 mx-auto rounded-full"></div>
+      <div class="w-24 h-1 bg-emerald-500 mx-auto rounded-full"></div>
     </div>
 
     <div class="space-y-16">
@@ -53,12 +136,12 @@
       <section class="max-w-3xl mx-auto">
         <h2 class="text-2xl font-semibold text-gray-900 mb-6">Who We Are</h2>
         <p class="text-gray-700 leading-relaxed mb-4">
-          We are an organization redefining the job search experience. Observing the youth’s skill mismatch and employment challenges, we’ve developed a platform that aligns users’ skills with suitable companies. Using Artificial Intelligence, we parse resumes, recommend roles, and provide structured learning roadmaps for trending IT jobs. Our integrated news feature also keeps users updated across seven domains: technology, science, Indian stock market, IT, health, sports, and fitness.
+          We are an organization redefining the job search experience. Observing the youth's skill mismatch and employment challenges, we've developed a platform that aligns users' skills with suitable companies. Using Artificial Intelligence, we parse resumes, recommend roles, and provide structured learning roadmaps for trending IT jobs. Our integrated news feature also keeps users updated across seven domains: technology, science, Indian stock market, IT, health, sports, and fitness.
         </p>
       </section>
 
       <!-- Our Mission -->
-      <section class="bg-emerald-50 rounded-lg p-8 max-w-3xl mx-auto">
+      <section class="bg-emerald-200 rounded-lg p-8 max-w-3xl mx-auto border-emerald-900">
         <h2 class="text-2xl font-semibold text-gray-900 mb-6">Our Mission</h2>
         <p class="text-gray-700 leading-relaxed text-lg">
           To revolutionize job searching in India by helping users find the best-fit company at a single click.
@@ -71,14 +154,14 @@
         <div class="grid md:grid-cols-2 gap-8">
           <div class="space-y-4">
             <div class="flex items-start space-x-3">
-              <div class="w-2 h-2 bg-emerald-300 rounded-full mt-2 flex-shrink-0"></div>
+              <div class="w-2 h-2 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></div>
               <div>
                 <h3 class="font-semibold text-gray-900 mb-1">Excellence</h3>
                 <p class="text-gray-600 text-sm">We aim to maintain a seamless and high-quality user experience.</p>
               </div>
             </div>
             <div class="flex items-start space-x-3">
-              <div class="w-2 h-2 bg-emerald-300 rounded-full mt-2 flex-shrink-0"></div>
+              <div class="w-2 h-2 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></div>
               <div>
                 <h3 class="font-semibold text-gray-900 mb-1">Innovation</h3>
                 <p class="text-gray-600 text-sm">We constantly explore creative and impactful approaches.</p>
@@ -87,14 +170,14 @@
           </div>
           <div class="space-y-4">
             <div class="flex items-start space-x-3">
-              <div class="w-2 h-2 bg-emerald-300 rounded-full mt-2 flex-shrink-0"></div>
+              <div class="w-2 h-2 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></div>
               <div>
                 <h3 class="font-semibold text-gray-900 mb-1">Integrity</h3>
                 <p class="text-gray-600 text-sm">We operate transparently and uphold ethical values.</p>
               </div>
             </div>
             <div class="flex items-start space-x-3">
-              <div class="w-2 h-2 bg-emerald-300 rounded-full mt-2 flex-shrink-0"></div>
+              <div class="w-2 h-2 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></div>
               <div>
                 <h3 class="font-semibold text-gray-900 mb-1">Partnership</h3>
                 <p class="text-gray-600 text-sm">We value lasting collaborations with teams and clients.</p>
