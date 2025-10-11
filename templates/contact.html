@@ -5,32 +5,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EdStack | Contact Us</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .menu-icon line {
+            transition: all 0.3s ease;
+        }
+        #menu-btn.active .line1 {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+        #menu-btn.active .line2 {
+            opacity: 0;
+        }
+        #menu-btn.active .line3 {
+            transform: rotate(-45deg) translate(7px, -6px);
+        }
+    </style>
 </head>
-<body class="bg-gradient-to-br from-slate-50 to-slate-100 min-h-screen flex items-center justify-center p-1">
+<body class="bg-gradient-to-br from-slate-50 to-slate-100 min-h-screen">
 
-    
-    
-    <div class="w-full max-w-2xl mb-40">
-        <div class="mt-8 mb-6 flex justify-center">
-  <nav class="bg-white/80 backdrop-blur-md border border-slate-200 rounded-full shadow-sm px-6 py-2 flex gap-4">
-    <a href="https://edstack.netlify.app"
-       class="px-4 py-2 rounded-full text-gray-600 hover:bg-emerald-50 hover:text-emerald-600 font-medium transition-colors duration-200">
-      Home
-    </a>
-    <a href="https://edstack.onrender.com/about"
-       class="px-4 py-2 rounded-full text-gray-600 hover:bg-emerald-50 hover:text-emerald-600 font-medium transition-colors duration-200">
-      About
-    </a>
-    <a href="https://edstack.onrender.com/service"
-       class="px-4 py-2 rounded-full text-gray-600 hover:bg-emerald-50 hover:text-emerald-600 font-medium transition-colors duration-200">
-      Services
-    </a>
-    <a href="https://edstack.onrender.com/contact"
-       class="px-4 py-2 rounded-full text-emerald-600 bg-emerald-50 font-semibold transition-colors duration-200">
-      Contact
-    </a>
-  </nav>
-</div>
+    <!-- Header with Exact React Navigation Styling -->
+    <nav class="bg-white shadow-md border-b border-emerald-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo/Brand -->
+                <div class="flex-shrink-0">
+                    <div class="text-2xl font-bold text-emerald-700">
+                        EdStack
+                    </div>
+                </div>
+
+                <!-- Desktop Nav -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <div class="flex items-baseline space-x-8">
+                        <a href="https://edstack.netlify.app" 
+                           class="relative text-emerald-700 hover:text-emerald-700 px-3 py-2 text-sm font-medium transition-colors duration-300 ease-in-out group">
+                            Home
+                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-700 transition-all duration-300 ease-in-out group-hover:w-full"></span>
+                        </a>
+                        <a href="https://edstack.onrender.com/about" 
+                           class="relative text-emerald-700 hover:text-emerald-700 px-3 py-2 text-sm font-medium transition-colors duration-300 ease-in-out group">
+                            About
+                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-700 transition-all duration-300 ease-in-out group-hover:w-full"></span>
+                        </a>
+                        <a href="https://edstack.onrender.com/service" 
+                           class="relative text-emerald-700 hover:text-emerald-700 px-3 py-2 text-sm font-medium transition-colors duration-300 ease-in-out group">
+                            Services
+                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-700 transition-all duration-300 ease-in-out group-hover:w-full"></span>
+                        </a>
+                        <a href="https://edstack.onrender.com/contact" 
+                           class="relative text-emerald-700 hover:text-emerald-700 px-3 py-2 text-sm font-medium transition-colors duration-300 ease-in-out group">
+                            Contact Us
+                            <span class="absolute bottom-0 left-0 w-full h-0.5 bg-emerald-700"></span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="menu-btn"
+                            class="text-emerald-700 focus:outline-none hover:ring-2 hover:ring-emerald-700 focus:ring-offset-2 p-2 rounded-md transition-colors duration-100"
+                            aria-label="Toggle menu">
+                        <svg class="h-6 w-6 menu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <line class="line1" x1="4" y1="6" x2="20" y2="6" stroke-width="2" stroke-linecap="round"/>
+                            <line class="line2" x1="4" y1="12" x2="20" y2="12" stroke-width="2" stroke-linecap="round"/>
+                            <line class="line3" x1="4" y1="18" x2="20" y2="18" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Nav Menu -->
+        <div id="mobile-menu"
+             class="md:hidden transition-all duration-300 ease-in-out overflow-hidden max-h-0 opacity-0">
+            <div class="px-2 pt-2 pb-3 space-y-1 border-t border-emerald-100">
+                <a href="https://edstack.netlify.app"
+                   class="block px-3 py-2 text-emerald-700 hover:text-emerald-50 hover:bg-emerald-700 rounded-md text-base font-medium transition-colors duration-200">
+                    Home
+                </a>
+                <a href="https://edstack.onrender.com/about"
+                   class="block px-3 py-2 text-emerald-700 hover:text-emerald-50 hover:bg-emerald-700 rounded-md text-base font-medium transition-colors duration-200">
+                    About
+                </a>
+                <a href="https://edstack.onrender.com/service"
+                   class="block px-3 py-2 text-emerald-700 hover:text-emerald-50 hover:bg-emerald-700 rounded-md text-base font-medium transition-colors duration-200">
+                    Services
+                </a>
+                <a href="https://edstack.onrender.com/contact"
+                   class="block px-3 py-2 text-emerald-700 hover:text-emerald-50 hover:bg-emerald-700 rounded-md text-base font-medium transition-colors duration-200">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuBtn.addEventListener('click', () => {
+            menuBtn.classList.toggle('active');
+            
+            if (mobileMenu.classList.contains('max-h-0')) {
+                mobileMenu.classList.remove('max-h-0', 'opacity-0');
+                mobileMenu.classList.add('max-h-64', 'opacity-100');
+            } else {
+                mobileMenu.classList.remove('max-h-64', 'opacity-100');
+                mobileMenu.classList.add('max-h-0', 'opacity-0');
+            }
+        });
+
+        // Close menu when clicking on a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menuBtn.classList.remove('active');
+                mobileMenu.classList.remove('max-h-64', 'opacity-100');
+                mobileMenu.classList.add('max-h-0', 'opacity-0');
+            });
+        });
+    </script>
+
+    <!-- Main Content -->
+    <div class="w-full max-w-2xl mx-auto px-4 py-12">
         <!-- Header -->
         <div class="text-center mb-8">
             <h1 class="text-3xl md:text-4xl font-bold text-slate-700 mb-2">Get In Touch</h1>
@@ -38,7 +134,7 @@
         </div>
 
         <!-- Contact Form Card -->
-        <div class="bg-white rounded-lg shadow-lg p-6 md:p-8 border border-slate-200">
+        <div class="bg-white rounded-lg shadow-lg p-6 md:p-8 border border-emerald-700">
             <form id="contactForm" class="space-y-6">
                 
                 <!-- Name Field -->
@@ -51,7 +147,7 @@
                         id="name" 
                         name="name" 
                         required
-                        class="w-full px-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-slate-500 focus:border-slate-500 outline-none transition-all duration-200 text-slate-700"
+                        class="w-full px-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-emerald-700 focus:border-emerald-700 outline-none transition-all duration-200 text-slate-700"
                         placeholder="John Doe"
                     >
                 </div>
@@ -66,7 +162,7 @@
                         id="email" 
                         name="email" 
                         required
-                        class="w-full px-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-slate-500 focus:border-slate-500 outline-none transition-all duration-200 text-slate-700"
+                        class="w-full px-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-emerald-700 focus:border-emerald-700 outline-none transition-all duration-200 text-slate-700"
                         placeholder="john.doe@example.com"
                     >
                 </div>
@@ -80,7 +176,7 @@
                         type="text" 
                         id="designation" 
                         name="designation"
-                        class="w-full px-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-slate-500 focus:border-slate-500 outline-none transition-all duration-200 text-slate-700"
+                        class="w-full px-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-emerald-700 focus:border-emerald-700 outline-none transition-all duration-200 text-slate-700"
                         placeholder="Software Engineer"
                     >
                 </div>
@@ -95,7 +191,7 @@
                         id="subject" 
                         name="subject" 
                         required
-                        class="w-full px-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-slate-500 focus:border-slate-500 outline-none transition-all duration-200 text-slate-700"
+                        class="w-full px-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-emerald-700 focus:border-emerald-700 outline-none transition-all duration-200 text-slate-700"
                         placeholder="Inquiry about..."
                     >
                 </div>
@@ -110,7 +206,7 @@
                         name="message" 
                         rows="6" 
                         required
-                        class="w-full px-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-slate-500 focus:border-slate-500 outline-none transition-all duration-200 resize-none text-slate-700"
+                        class="w-full px-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-emerald-700 focus:border-emerald-700 outline-none transition-all duration-200 resize-none text-slate-700"
                         placeholder="Write your message here..."
                     ></textarea>
                 </div>
@@ -119,7 +215,7 @@
                 <div>
                     <button 
                         type="submit"
-                        class="w-full bg-slate-600 hover:bg-slate-700 text-white font-medium py-3 px-6 rounded-md transition-all duration-200 shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-offset-2"
+                        class="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-medium py-3 px-6 rounded-md transition-all duration-200 shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-emerald-700 focus:ring-offset-2"
                     >
                         Send Message
                     </button>
@@ -132,11 +228,51 @@
             We typically respond within 24-48 hours
         </p>
 
-        
+        <!-- Inspirational Quotes Section -->
+        <div class="mt-16 space-y-8">
+            <!-- Quote 3 -->
+            <div class="bg-gradient-to-r from-emerald-50 to-emerald-100 rounded-lg p-8 border-l-4 border-emerald-700 shadow-sm">
+                <div class="flex items-start space-x-4">
+                    <svg class="w-8 h-8 text-emerald-700 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                    </svg>
+                    <div>
+                        <p class="text-lg md:text-xl text-slate-700 font-medium italic mb-3">
+                            "Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work."
+                        </p>
+                        <p class="text-sm text-emerald-800 font-semibold">— Steve Jobs</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quote 4 -->
+            <div class="bg-gradient-to-r from-slate-50 to-slate-100 rounded-lg p-8 border-l-4 border-slate-600 shadow-sm">
+                <div class="flex items-start space-x-4">
+                    <svg class="w-8 h-8 text-slate-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                    </svg>
+                    <div>
+                        <p class="text-lg md:text-xl text-slate-700 font-medium italic mb-3">
+                            "The only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle."
+                        </p>
+                        <p class="text-sm text-slate-800 font-semibold">— Steve Jobs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="mt-12 bg-emerald-700 rounded-lg p-8 text-center shadow-lg">
+            <h3 class="text-2xl font-bold text-white mb-3">Ready to Start Your Journey?</h3>
+            <p class="text-emerald-50 mb-6 max-w-xl mx-auto">
+                Join thousands of professionals who have transformed their careers with EdStack. Your dream job is just one step away.
+            </p>
+            <a href="https://edstack.netlify.app" 
+               class="inline-block bg-white text-emerald-700 font-semibold px-8 py-3 rounded-md hover:bg-emerald-50 transition-colors duration-200 shadow-md">
+                Explore Opportunities
+            </a>
+        </div>
     </div>
-
-    
-
 
     <script>
         document.getElementById('contactForm').addEventListener('submit', function(e) {
