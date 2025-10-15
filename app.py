@@ -95,15 +95,15 @@ def company_news():
             "Role": "Software Engineer / Ninja / Digital",
             "Stipend": "₹3L - ₹7L LPA",
             "Loc": "India",
-            "Link": "https://www.tcs.com/careers",
+            "Link": "https://www.tcs.com/careers/india/entry-level",
             "Batch": "2025/26 passouts",
             "Logo": get_cached_logo("tcs.com")
         },
         "Infosys": {
-            "Role": "Systems Engineer / Power Programmer",
-            "Stipend": "₹3.6L - ₹8L LPA",
+            "Role": "Wintern Internship",
+            "Stipend": "Merit Based",
             "Loc": "India",
-            "Link": "https://www.infosys.com/careers",
+            "Link": "https://www.infosys.com/careers/internships.html",
             "Batch": "2025/26 passouts",
             "Logo": get_cached_logo("infosys.com")
         },
@@ -111,17 +111,9 @@ def company_news():
             "Role": "Project Engineer",
             "Stipend": "₹3.5L - ₹6.5L LPA",
             "Loc": "India",
-            "Link": "https://careers.wipro.com",
+            "Link": "https://careers.wipro.com/search/?q=&locationsearch=India&searchResultView=LIST&markerViewed=&carouselIndex=&facetFilters=%7B%22custRMKMappingPicklist%22%3A%5B%22Engineering%22%2C%22Data+Analytics%22%5D%7D&pageNumber=0",
             "Batch": "2025/26 passouts",
             "Logo": get_cached_logo("wipro.com")
-        },
-        "HCLTech": {
-            "Role": "Graduate Engineer Trainee",
-            "Stipend": "₹3.5L - ₹7L LPA",
-            "Loc": "India",
-            "Link": "https://www.hcltech.com/careers/campus-hiring",
-            "Batch": "2025/26 passouts",
-            "Logo": get_cached_logo("hcltech.com")
         },
         "Tech Mahindra": {
             "Role": "Associate Software Engineer",
@@ -132,10 +124,10 @@ def company_news():
             "Logo": get_cached_logo("techmahindra.com")
         },
         "LTIMindtree": {
-            "Role": "Software Engineer, Graduate Trainee",
+            "Role": "Ad Trafficker Ad Ops",
             "Stipend": "₹3.4L - ₹7.2L LPA",
-            "Loc": "India",
-            "Link": "https://www.ltimindtree.com/careers/",
+            "Loc": "Mumbai",
+            "Link": "https://ltimindtree.ripplehire.com/candidate/?token=xviyQvbnyYZdGtozXoNm&lang=en&source=CAREERSITE#detail/job/794405",
             "Batch": "2025/26 passouts",
             "Logo": get_cached_logo("ltimindtree.com")
         },
@@ -148,10 +140,10 @@ def company_news():
             "Logo": get_cached_logo("larsentoubro.com")
         },
         "Stripe": {
-            "Role": "Software Engineering New Grad",
-            "Stipend": "₹10L - ₹15L LPA",
+            "Role": "50+ Opening Multiple Roles",
+            "Stipend": "₹10L - ₹65L LPA",
             "Loc": "Bengaluru",
-            "Link": "https://stripe.com/careers",
+            "Link": "https://stripe.com/jobs/search?office_locations=Asia+Pacific--Bengaluru",
             "Batch": "2026",
             "Logo": get_cached_logo("stripe.com")
         },
@@ -159,7 +151,7 @@ def company_news():
             "Role": "Data Scientist / Machine Learning Engineer",
             "Stipend": "₹15L - ₹16L LPA",
             "Loc": "Kolkata",
-            "Link": "https://www.ey.com/en_in/careers",
+            "Link": "https://eyglobal.yello.co/job_boards/c1riT--B2O-KySgYWsZO1Q?locale=en",
             "Batch": "2026 to 2027",
             "Logo": get_cached_logo("ey.com")
         }
@@ -174,15 +166,15 @@ def company_news1():
             "Role": "Associate Software Engineer Intern",
             "Stipend": "₹25K - ₹42K/month",
             "Loc": "Chennai",
-            "Link": "https://kaleris.com/company/careers/",
+            "Link": "https://kaleris.wd501.myworkdayjobs.com/kaleris_careers?locations=39a74440c4f910011fdea6685c650000",
             "Batch": "2024 to 2025",
             "Logo": get_cached_logo("kaleris.com")
         },
         "Seagate": {
             "Role": "Automation Intern",
-            "Stipend": "₹17K - ₹33K/month",
+            "Stipend": "₹37K - ₹53K/month",
             "Loc": "Pune",
-            "Link": "https://seagatecareers.com",
+            "Link": "https://seagatecareers.com/search/?createNewAlert=false&q=&locationsearch=India&optionsFacetsDD_country=&optionsFacetsDD_dept=&optionsFacetsDD_customfield1=&optionsFacetsDD_lang=",
             "Batch": "2024 to 2026",
             "Logo": get_cached_logo("seagate.com")
         },
@@ -196,25 +188,17 @@ def company_news1():
         },
         "BT Group": {
             "Role": "Associate Engineer",
-            "Stipend": "₹4L - ₹6L LPA",
+            "Stipend": "₹4L - ₹64L LPA",
             "Loc": "Bengaluru",
-            "Link": "https://www.bt.com/careers",
+            "Link": "https://jobs.bt.com/search/?createNewAlert=false&q=&locationsearch=india&optionsFacetsDD_brand=&optionsFacetsDD_customfield3=",
             "Batch": "2023 to 2025",
             "Logo": get_cached_logo("bt.com")
-        },
-        "Myntra": {
-            "Role": "Software Development Engineer Intern",
-            "Stipend": "₹70,000/month",
-            "Loc": "Bangalore",
-            "Link": "https://www.myntra.com/careers",
-            "Batch": "2026",
-            "Logo": get_cached_logo("myntra.com")
         },
         "Microsoft": {
             "Role": "Software Engineering Intern",
             "Stipend": "₹67K - ₹1L/month",
             "Loc": "Multiple across India",
-            "Link": "https://careers.microsoft.com/",
+            "Link": "https://jobs.careers.microsoft.com/global/en/search?lc=India&et=Full-Time&l=en_us&pg=1&pgSz=20&o=Relevance&flt=true",
             "Batch": "2026 to 2027",
             "Logo": get_cached_logo("microsoft.com")
         },
@@ -222,7 +206,7 @@ def company_news1():
             "Role": "Trainee Software Development Engineer",
             "Stipend": "₹6L - ₹9L LPA",
             "Loc": "Bangalore",
-            "Link": "https://www.infrrd.ai/careers",
+            "Link": "https://www.infrrd.ai/open-positions",
             "Batch": "2026",
             "Logo": get_cached_logo("infrrd.ai")
         },
@@ -230,7 +214,7 @@ def company_news1():
             "Role": "Associate React Engineer",
             "Stipend": "Probation ₹25K/month, 2 Lakh/m FTE",
             "Loc": "Remote",
-            "Link": "https://rtcamp.com/careers/",
+            "Link": "https://careers.rtcamp.com/",
             "Batch": "2025 to 2026",
             "Logo": get_cached_logo("rtcamp.com")
         },
@@ -238,7 +222,7 @@ def company_news1():
             "Role": "Engineer Applications",
             "Stipend": "₹6L - ₹10L LPA",
             "Loc": "Bangalore",
-            "Link": "https://www.infineon.com/cms/en/careers/",
+            "Link": "https://jobs.infineon.com/careers?start=0&location=india&pid=563808966965058&sort_by=distance&filter_include_remote=0",
             "Batch": "2023 to 2025",
             "Logo": get_cached_logo("infineon.com")
         }
@@ -253,7 +237,7 @@ def company_news2():
             "Role": "Associate QA Engineer",
             "Stipend": "₹4L - ₹6L LPA",
             "Loc": "Bangalore",
-            "Link": "https://careers.harmonicinc.com/",
+            "Link": "https://careers.harmonicinc.com/apply-now/",
             "Batch": "2024 to 2025",
             "Logo": get_cached_logo("harmonicinc.com")
         },
@@ -261,33 +245,9 @@ def company_news2():
             "Role": "Summer Intern",
             "Stipend": "₹25K - ₹33K/month",
             "Loc": "Mumbai & Bangalore",
-            "Link": "https://careers.bakerhughes.com/",
+            "Link": "https://careers.bakerhughes.com/global/en/job/R153161/Summer-Internships-2026-India",
             "Batch": "2026 to 2028",
             "Logo": get_cached_logo("bakerhughes.com")
-        },
-        "Uber": {
-            "Role": "Data Science Intern",
-            "Stipend": "₹50K - ₹1L/month",
-            "Loc": "Bangalore",
-            "Link": "https://www.uber.com/global/en/careers/",
-            "Batch": "2026",
-            "Logo": get_cached_logo("uber.com")
-        },
-        "Mindtickle": {
-            "Role": "Software Engineer Internship",
-            "Stipend": "₹70,000/month",
-            "Loc": "Pune, India",
-            "Link": "https://www.linkedin.com/jobs/view/4305566133",
-            "Batch": "2026/27 passout",
-            "Logo": get_cached_logo("mindtickle.com")
-        },
-        "Kadel Labs": {
-            "Role": "MERN Stack Developer Intern",
-            "Stipend": "₹25K - ₹40K/month",
-            "Loc": "Udaipur",
-            "Link": "https://kadel.in/careers",
-            "Batch": "2024 to 2025",
-            "Logo": get_cached_logo("kadel.in")
         },
         "Rippling": {
             "Role": "SDE (Frontend)",
@@ -309,7 +269,7 @@ def company_news2():
             "Role": "Multiple Software Engineering and Product Roles",
             "Stipend": "₹1,00,000 - ₹1,25,000/month",
             "Loc": "Bangalore, India",
-            "Link": "https://www.metacareers.com/jobs?offices%5B0%5D=Bangalore%2C%20India&page=2",
+            "Link": "https://www.metacareers.com/jobs?offices[0]=Bangalore%2C%20India&sort_by_new=true",
             "Batch": "2022/23/24 passouts and before",
             "Logo": get_cached_logo("meta.com")
         },
