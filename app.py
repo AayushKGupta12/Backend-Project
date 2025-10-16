@@ -343,78 +343,78 @@ def company_news2():
 @app.route('/company-news3')
 def company_news3():
     data = {
-        "Youtube": {
-            "Role": "Software Engineer",
-            "Stipend": "₹90,000 - ₹1,10,000/month",
-            "Loc": "India",
-            "Link": "https://www.google.com/about/careers/applications/jobs/results/109851367958291142-software-engineer/",
-            "Batch": "2022/23/24 passouts",
-            "Logo": get_cached_logo("youtube.com")
-        },
-        "JP Morgan Chase": {
-            "Role": "SDE-1",
-            "Stipend": "₹80,000/month",
-            "Loc": "Multiple locations, India",
-            "Link": "https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/210667642",
-            "Batch": "2023/24 passouts",
-            "Logo": get_cached_logo("jpmorganchase.com")
-        },
-        "Google Associate Product Manager": {
-            "Role": "Associate Product Manager",
-            "Stipend": "Not specified",
-            "Loc": "India",
-            "Link": "https://www.google.com/about/careers/applications/jobs/results/75038123993506502-associate-product-manager/",
-            "Batch": "2025/26 passouts",
-            "Logo": get_cached_logo("google.com")
-        },
-        "Google Software Engineer Uni Grad": {
-            "Role": "Software Engineer - Uni Grad",
-            "Stipend": "Not specified",
-            "Loc": "India",
-            "Link": "https://www.google.com/about/careers/applications/jobs/results/125611950166942406-software-engineer/",
-            "Batch": "2026 passouts",
-            "Logo": get_cached_logo("google.com")
-        },
-        "Google Application Engineering Internship": {
-            "Role": "Application Engineering Internship - 6 Months",
-            "Stipend": "Not specified",
-            "Loc": "India",
-            "Link": "https://www.google.com/about/careers/applications/jobs/results/88011077542912710-application-engineering-intern-winter-2026",
-            "Batch": "2026 passouts",
-            "Logo": get_cached_logo("google.com")
-        },
-        "Uber Freight": {
-            "Role": "SDE",
-            "Stipend": "Not specified",
-            "Loc": "India",
-            "Link": "https://www.uberfreight.com/careers/?gh_jid=4750841008#opportunities",
-            "Batch": "2022/23/24 passouts",
-            "Logo": get_cached_logo("uberfreight.com")
-        },
-        "Rubrik": {
-            "Role": "Software Engineer - Winter Intern",
-            "Stipend": "₹1.5 Lakh",
-            "Loc": "Gurugram",
-            "Link": "https://www.rubrik.com/company/careers/departments/job.7208329.1929",
-            "Batch": "2026 passouts",
-            "Logo": get_cached_logo("rubrik.com")
-        },
-        "Walmart Global Tech": {
-            "Role": "Internship",
-            "Stipend": "₹1 Lakh/m intern stipend; 26 LPA FTE",
-            "Loc": "India",
-            "Link": "https://yt.openinapp.co/lhdte",
-            "Batch": "Not specified",
-            "Logo": get_cached_logo("walmart.com")
-        },
-        "Microsoft SDE 1": {
-            "Role": "SDE 1",
-            "Stipend": "₹1,00,000/month",
-            "Loc": "Remote",
-            "Link": "https://jobs.careers.microsoft.com/global/en/job/1863345/Software-Engineer",
-            "Batch": "2023/24 passouts",
-            "Logo": get_cached_logo("microsoft.com")
-        }
+      "Microsoft": {
+        "Role": "Software Engineer",
+        "Stipend": "₹22 LPA average",
+        "Loc": "Bangalore, India",
+        "Batch": "2025 onwards",
+        "Link": "https://jobs.careers.microsoft.com/us/en/job/1849735/Software-Engineer",
+        "Logo": "https://img.logo.dev/microsoft.com?token=pk_djKZ3gIOQqyja8btgxBpBA"
+      },
+      "Dolby": {
+        "Role": "Research Intern",
+        "Stipend": "₹1.5 L/month",
+        "Loc": "Bangalore",
+        "Batch": "2027, 2028 PHD grads",
+        "Link": "https://jobs.dolby.com/careers/job/30262513?domain=dolby.com&",
+        "Logo": "https://img.logo.dev/dolby.com?token=pk_djKZ3gIOQqyja8btgxBpBA"
+      },
+      "IG Tech": {
+        "Role": "Frontend Development Intern",
+        "Stipend": "₹30,000",
+        "Loc": "Not specified",
+        "Batch": "Not specified",
+        "Link": "https://docs.google.com/forms/d/16OiiJjygdHHHqbdwwVOHLExFyeJDi9UtvVvIcZd0VRY/viewform?edit_requested=true",
+        "Logo": "https://img.logo.dev/igtech.com?token=pk_djKZ3gIOQqyja8btgxBpBA"
+      },
+      "Thermo Fisher Scientific": {
+        "Role": "Engineer I, Software",
+        "Stipend": "Not specified",
+        "Loc": "India",
+        "Batch": "2026 onwards",
+        "Link": "https://jobs.thermofisher.com/global/en/job/R-01329697/Engineer-I-Software?rx_ch=jobpost&rx_id=9719795a-a91d-11f0-9efd-b3409657a5f1&rx_job=R-01329697&rx_medium=post&rx_paid=0&rx_r=none",
+        "Logo": "https://img.logo.dev/thermofisher.com?token=pk_djKZ3gIOQqyja8btgxBpBA"
+      },
+      "Nike": {
+        "Role": "Software Engineer I",
+        "Stipend": "Not specified",
+        "Loc": "Bangalore",
+        "Batch": "2025 onwards",
+        "Link": "https://careers.nike.com/software-engineer-i-itc/job/R-71708",
+        "Logo": "https://img.logo.dev/nike.com?token=pk_djKZ3gIOQqyja8btgxBpBA"
+      },
+      "American Express": {
+        "Role": "Software Engineer I",
+        "Stipend": "Not specified",
+        "Loc": "Chennai",
+        "Batch": "2025 grads",
+        "Link": "https://aexp.eightfold.ai/careers/job/30486244?hl=en&domain=aexp.com",
+        "Logo": "https://img.logo.dev/aexp.com?token=pk_djKZ3gIOQqyja8btgxBpBA"
+      },
+      "Blueyonder": {
+        "Role": "Software Engineer",
+        "Stipend": "Not specified",
+        "Loc": "India",
+        "Batch": "2026 onwards",
+        "Link": "https://careers.blueyonder.com/us/en/job/BYPBYXUS253097EXTERNALENUS/Software-engineer",
+        "Logo": "https://img.logo.dev/blueyonder.com?token=pk_djKZ3gIOQqyja8btgxBpBA"
+      },
+      "Docusign": {
+        "Role": "Software Engineer",
+        "Stipend": "Not specified",
+        "Loc": "India",
+        "Batch": "2026 onwards",
+        "Link": "https://careers.docusign.com/jobs/26738?lang=en-us&iis=Job+board",
+        "Logo": "https://img.logo.dev/docusign.com?token=pk_djKZ3gIOQqyja8btgxBpBA"
+      },
+      "Wells Fargo": {
+        "Role": "Software Engineer",
+        "Stipend": "Not specified",
+        "Loc": "India",
+        "Batch": "2026 onwards",
+        "Link": "https://www.wellsfargojobs.com/en/jobs/r-495099/software-engineer/?jClickId=295291e2-66d1-44d6-a336-3189b6259586",
+        "Logo": "https://img.logo.dev/wellsfargo.com?token=pk_djKZ3gIOQqyja8btgxBpBA"
+      }
     }
     return jsonify(data)
 
