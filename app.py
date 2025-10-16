@@ -87,6 +87,61 @@ def get_cached_logo(domain):
     return LOGO_CACHE[domain]
 
 
+@app.route('/hero')
+def hero():
+    data = {
+        "Tata Consultancy Services": {
+            "Logo": get_cached_logo("tcs.com")
+        },
+        "Infosys": {
+            "Logo": get_cached_logo("infosys.com")
+        },
+        "EY": {
+            "Logo": get_cached_logo("ey.com")
+        },
+        "HSBC": {
+            "Logo": get_cached_logo("hsbc.com")
+        },
+        "Microsoft": {
+            "Logo": get_cached_logo("microsoft.com")
+        },
+        "Uber": {
+            "Logo": get_cached_logo("uber.com")
+        },
+        "Qualcomm": {
+            "Logo": get_cached_logo("qualcomm.com")
+        },
+        "Meta": {
+            "Logo": get_cached_logo("meta.com")
+        },
+        "JP Morgan Chase": {
+            "Logo": get_cached_logo("jpmorganchase.com")
+        },
+        "Google": {
+            "Logo": get_cached_logo("google.com")
+        },
+        "Rubrik": {
+            "Logo": get_cached_logo("rubrik.com")
+        },
+        "Walmart Global Tech": {
+            "Logo": get_cached_logo("walmart.com")
+        },
+        "Amazon": {
+            "Logo": get_cached_logo("amazon.com")
+        },
+        "Oracle": {
+            "Logo": get_cached_logo("oracle.com")
+        },
+        "Hewlett Packard Enterprise": {
+            "Logo": get_cached_logo("hpe.com")
+        },
+        "Myntra": {
+            "Logo": get_cached_logo("myntra.com")
+        }
+    }
+    return jsonify(data)
+
+
 
 @app.route('/company-news')
 def company_news():
