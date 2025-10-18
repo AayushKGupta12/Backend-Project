@@ -598,46 +598,40 @@ def business():
 
 import random
 import datetime
-import pytz
+from zoneinfo import ZoneInfo  # Use built-in Python module for timezone
 from flask import Flask, jsonify
 from apscheduler.schedulers.background import BackgroundScheduler
-# Initialize timezone IST
-IST = pytz.timezone('Asia/Kolkata')
+
+# Initialize timezone IST using zoneinfo
+IST = ZoneInfo("Asia/Kolkata")
 
 # Initialize global variables
 A = random.randint(200, 400)
 B = A + random.choice([-3, -2, -1, 1, 2, 3])
 
 def refresh_A():
-    """Refresh A ever hours starting from midnight IST"""
     global A, B
     A = random.randint(200, 400)
     B = A + random.choice([-3, -2, -1, 1, 2, 3])
     print(f"[A REFRESHED] A={A}, B={B}")
 
 def refresh_B():
-    """Refresh B every 3 seconds based on current A"""
     global B
     B = A + random.choice([-3, -2, -1, 1, 2, 3])
     print(f"[B REFRESHED] A={A}, B={B}")
 
-# Initialize scheduler
 scheduler = BackgroundScheduler(timezone=IST)
 
-# Schedule B refresh every 3 seconds
 scheduler.add_job(refresh_B, 'interval', seconds=3, id='refresh_B_job')
 
-# Schedule A refresh every 4 hours starting from next midnight IST
 now = datetime.datetime.now(IST)
 next_midnight = (now + datetime.timedelta(days=1)).replace(hour=0, minute=0, second=0, microsecond=0)
 scheduler.add_job(refresh_A, 'interval', hours=4, start_date=next_midnight, id='refresh_A_job')
 
-# Start the scheduler
 scheduler.start()
 
 @app.route('/liveUser', methods=['GET'])
 def live_user():
-    """Return current values of A and B"""
     return jsonify({'A': A, 'B': B})
 
 ####################################################
