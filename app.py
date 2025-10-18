@@ -2,20 +2,20 @@ from flask import Flask, jsonify, render_template
 from flask_cors import CORS
 import requests
 import os
-from mistralai import Mistral
 from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.triggers.cron import CronTrigger
 import requests
 from datetime import datetime, timezone
+import base64
+import random
+
 
 app = Flask(__name__)
 
 CORS(app, resources={r"/*": {"origins": [
     "http://localhost:5175",
     "http://localhost:5174",
-    "http://localhost:5173",
-    "https://edstack.netlify.app",
-    "https://stackbit.vercel.app"
+    "http://localhost:5173"
 ]}})
 
 
@@ -45,7 +45,6 @@ def soon():
 #                 Logos & Companies List                 #
 ##########################################################
 
-
 LOGO_CACHE = {}
 LOGO_API_TOKEN = "pk_djKZ3gIOQqyja8btgxBpBA"
 
@@ -70,7 +69,7 @@ def initialize_logo_cache():
     # Extract all unique domains from company data
     domains = [
         "tcs.com", "infosys.com", "wipro.com", "hcltech.com", "techmahindra.com",
-        "ltimindtree.com", "larsentoubro.com", "stripe.com",
+        "ltimindtree.com", "larsentoubro.com", "stripe.com", "ey.com",
         "kaleris.com", "seagate.com", "hsbc.com", "bt.com", "myntra.com",
         "microsoft.com", "infrrd.ai", "rtcamp.com", "infineon.com",
         "harmonicinc.com", "bakerhughes.com", "uber.com", "mindtickle.com",
@@ -78,7 +77,7 @@ def initialize_logo_cache():
         "youtube.com", "jpmorganchase.com", "google.com", "uberfreight.com",
         "rubrik.com", "walmart.com", "capgemini.com", "accenture.com",
         "hpe.com", "amazon.com", "oracle.com", "ltts.com", "hexaware.com",
-        "birlasoft.com","ey.com","coinbase.com"
+        "birlasoft.com"
     ]
     
     print("Starting logo cache initialization...")
@@ -513,6 +512,9 @@ def company_news4():
     }
     return jsonify(data)
 
+
+
+
 ################# News Stack ###############################
 
 API_BLOG = "pub_727ab1d20b1946d9b9e44b6b298ab23a"
@@ -634,7 +636,17 @@ scheduler.start()
 def live_user():
     return jsonify({'A': A, 'B': B})
 
-####################################################
+
+
+
+
+
+
+#############################################################
+
+
+
+
 
 if __name__ == '__main__':
     app.run(debug=False)
