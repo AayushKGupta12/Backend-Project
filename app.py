@@ -513,12 +513,6 @@ def company_news4():
     }
     return jsonify(data)
 
-
-@app.route("/soon")
-def soon():
-    return render_template("soon.html")
-
-
 ################# News Stack ###############################
 
 API_BLOG = "pub_727ab1d20b1946d9b9e44b6b298ab23a"
