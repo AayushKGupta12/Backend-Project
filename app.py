@@ -70,7 +70,7 @@ def initialize_logo_cache():
         "youtube.com", "jpmorganchase.com", "google.com", "uberfreight.com",
         "rubrik.com", "walmart.com", "capgemini.com", "accenture.com",
         "hpe.com", "amazon.com", "oracle.com", "ltts.com", "hexaware.com",
-        "birlasoft.com","ey.com"
+        "birlasoft.com","ey.com","coinbase.com"
     ]
     
     print("Starting logo cache initialization...")
@@ -209,6 +209,14 @@ def company_news():
             "Link": "https://eyglobal.yello.co/job_boards/c1riT--B2O-KySgYWsZO1Q?locale=en",
             "Batch": "2026 to 2027",
             "Logo": get_cached_logo("ey.com")
+        },
+        "coinbase":{
+            "Role":"Software Engineer Intern",
+            "Stipend":"₹1.75L L/M",
+            "Loc": "Remote",
+            "Batch":"2027 passout",
+            "Logo":get_cached_logo("coinbase.com"),
+            "Link": "https://www.coinbase.com/en-in/careers/positions/7294082"
         }
     }
     return jsonify(data)
