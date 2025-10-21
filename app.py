@@ -50,8 +50,7 @@ def soon():
 
 LOGO_CACHE = {}
 
-# LOGO_API_TOKEN = "pk_djKZ3gIOQqyja8btgxBpBA"
-LOGO_API_TOKEN = "pk_dj"
+LOGO_API_TOKEN = "pk_djKZ3gIOQqyja8btgxBpBA"
 
 def fetch_logo(domain):
     """Fetch a single logo and return base64 encoded data or URL"""
@@ -522,8 +521,8 @@ def company_news4():
 
 ################# News Stack ###############################
 
-# API_BLOG = "pub_727ab1d20b1946d9b9e44b6b298ab23a"
-API_BLOG = "pub_727ab1"
+API_BLOG = "pub_727ab1d20b1946d9b9e44b6b298ab23a"
+
 CACHE = {
     "latest-news": None,
     "tech": None,
