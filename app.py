@@ -181,14 +181,6 @@ def company_news():
             "Batch": "2025/26 passouts",
             "Logo": get_cached_logo("wipro.com")
         },
-        "Tech Mahindra": {
-            "Role": "Associate Software Engineer",
-            "Stipend": "₹3L - ₹6L LPA",
-            "Loc": "India",
-            "Link": "https://campusconnect.techmahindra.com/home",
-            "Batch": "2025/26 passouts",
-            "Logo": get_cached_logo("techmahindra.com")
-        },
         "LTIMindtree": {
             "Role": "Ad Trafficker Ad Ops",
             "Stipend": "₹3.4L - ₹7.2L LPA",
@@ -340,8 +332,8 @@ def company_news2():
             "Logo": get_cached_logo("qualcomm.com")
         },
         "Meta": {
-            "Role": "Multiple Software Engineering and Product Roles",
-            "Stipend": "₹1,00,000 - ₹1,25,000/month",
+            "Role": "Software Engineering and Product",
+            "Stipend": "₹1.25L/M",
             "Loc": "Bangalore, India",
             "Link": "https://www.metacareers.com/jobs?offices[0]=Bangalore%2C%20India&sort_by_new=true",
             "Batch": "2022/23/24 passouts and before",
@@ -378,30 +370,6 @@ def company_news3():
         "Link": "https://jobs.dolby.com/careers/job/30262513?domain=dolby.com&",
         "Logo": "https://img.logo.dev/dolby.com?token=pk_djKZ3gIOQqyja8btgxBpBA"
       },
-      "IG Tech": {
-        "Role": "Frontend Development Intern",
-        "Stipend": "₹30,000",
-        "Loc": "Not specified",
-        "Batch": "Not specified",
-        "Link": "https://docs.google.com/forms/d/16OiiJjygdHHHqbdwwVOHLExFyeJDi9UtvVvIcZd0VRY/viewform?edit_requested=true",
-        "Logo": "https://img.logo.dev/igtech.com?token=pk_djKZ3gIOQqyja8btgxBpBA"
-      },
-      "Thermo Fisher Scientific": {
-        "Role": "Engineer I, Software",
-        "Stipend": "Not specified",
-        "Loc": "India",
-        "Batch": "2026 onwards",
-        "Link": "https://jobs.thermofisher.com/global/en/job/R-01329697/Engineer-I-Software?rx_ch=jobpost&rx_id=9719795a-a91d-11f0-9efd-b3409657a5f1&rx_job=R-01329697&rx_medium=post&rx_paid=0&rx_r=none",
-        "Logo": "https://img.logo.dev/thermofisher.com?token=pk_djKZ3gIOQqyja8btgxBpBA"
-      },
-      "Nike": {
-        "Role": "Software Engineer I",
-        "Stipend": "Not specified",
-        "Loc": "Bangalore",
-        "Batch": "2025 onwards",
-        "Link": "https://careers.nike.com/software-engineer-i-itc/job/R-71708",
-        "Logo": "https://img.logo.dev/nike.com?token=pk_djKZ3gIOQqyja8btgxBpBA"
-      },
       "American Express": {
         "Role": "Software Engineer I",
         "Stipend": "Not specified",
@@ -417,22 +385,6 @@ def company_news3():
         "Batch": "2026 onwards",
         "Link": "https://careers.blueyonder.com/us/en/job/BYPBYXUS253097EXTERNALENUS/Software-engineer",
         "Logo": "https://img.logo.dev/blueyonder.com?token=pk_djKZ3gIOQqyja8btgxBpBA"
-      },
-      "Docusign": {
-        "Role": "Software Engineer",
-        "Stipend": "Not specified",
-        "Loc": "India",
-        "Batch": "2026 onwards",
-        "Link": "https://careers.docusign.com/jobs/26738?lang=en-us&iis=Job+board",
-        "Logo": "https://img.logo.dev/docusign.com?token=pk_djKZ3gIOQqyja8btgxBpBA"
-      },
-      "Wells Fargo": {
-        "Role": "Software Engineer",
-        "Stipend": "Not specified",
-        "Loc": "India",
-        "Batch": "2026 onwards",
-        "Link": "https://www.wellsfargojobs.com/en/jobs/r-495099/software-engineer/?jClickId=295291e2-66d1-44d6-a336-3189b6259586",
-        "Logo": "https://img.logo.dev/wellsfargo.com?token=pk_djKZ3gIOQqyja8btgxBpBA"
       }
     }
     return jsonify(data)
