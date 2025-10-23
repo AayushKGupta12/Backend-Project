@@ -81,7 +81,7 @@ def initialize_logo_cache():
         "youtube.com", "jpmorganchase.com", "google.com", "uberfreight.com",
         "rubrik.com", "walmart.com", "capgemini.com", "accenture.com",
         "hpe.com", "amazon.com", "oracle.com", "ltts.com", "hexaware.com",
-        "birlasoft.com"
+        "birlasoft.com","blackhawknetwork.com"
     ]
     
     print("Starting logo cache initialization...")
@@ -220,6 +220,14 @@ def company_news():
             "Batch":"2027 passout",
             "Logo":get_cached_logo("coinbase.com"),
             "Link": "https://www.coinbase.com/en-in/careers/positions/7294082"
+        },
+        "Blackhawk":{
+            "Role":"Software Engineer",
+            "Stipend":"₹12 Lpa.",
+            "Loc": "Remote",
+            "Batch":"2025, 2024, 2023",
+            "Logo":get_cached_logo("blackhawknetwork.com"),
+            "Link": "https://apac-blackhawknetwork.icims.com/jobs/24937/software-engineer/job?mobile=false&width=1120&height=500&bga=true&needsRedirect=false&jan1offset=330&jun1offset=330"
         }
     }
     return jsonify(data)
@@ -291,6 +299,14 @@ def company_news1():
             "Link": "https://jobs.infineon.com/careers?start=0&location=india&pid=563808966965058&sort_by=distance&filter_include_remote=0",
             "Batch": "2023 to 2025",
             "Logo": get_cached_logo("infineon.com")
+        },
+        "Capgemini": {
+            "Role": "Customer Support",
+            "Stipend": "₹3.3L LPA",
+            "Loc": "Noida",
+            "Link": "https://app.joinsuperset.com/join/#/signup/student/jobprofiles/3a776dbf-8e0a-48da-9bda-c26e442567be",
+            "Batch": "2025, 2024",
+            "Logo": get_cached_logo("capgemini.com")
         }
     }
     return jsonify(data)
